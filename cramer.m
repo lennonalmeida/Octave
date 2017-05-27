@@ -6,10 +6,10 @@ len = size(A); %len recebe o tamanho da matriz dos coeficientes
 dets = zeros(1,len(2)); %cria-se o vetor que terá os determinantes intermediarios
 X = zeros(1,len(2)); %cria-se o vetor que terá os resultados para as variaves
 
-%note que as variaveis acima são criadas de acordo com o tamanho da Matriz A
+%note que as variaveis acima são criadas de acordo com o numero de colunas da Matriz A
 
 det_cof = det(A); %determinantes geral da matriz A
-M = A; &M é uma variavel auxiliar
+M = A; %M é uma variavel auxiliar
 i = 1;
 
 while i <= len(2);  %nesse loop calculamos os determinantes intermediarios
@@ -21,7 +21,7 @@ end
 
 i = 1;
 while i <= len (2); %esse loop calculo e passa os valores para o vetor X (resultado das variaveis)
-  X(i) = dets(i) / det_cof;   %Xk = det_k / det
+  X(i) = dets(i) / det_cof;   %Xk = detk / det
   i = i + 1;
   
 end
